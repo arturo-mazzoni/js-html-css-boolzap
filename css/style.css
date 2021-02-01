@@ -6,6 +6,8 @@
 
 body {
   background-image: linear-gradient(#009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
+  overflow: hidden;
+  height: 100vh;
   font-family: 'Lato', sans-serif;
 }
 
@@ -28,7 +30,23 @@ body {
 .header_left {
   width: 100%;
   height: 70px;
+  line-height: 70px;
   border: 1px solid black;
+}
+
+.header_left img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+}
+
+.header_left h5 {
+  width: 50%;
+}
+
+.header_left i {
+  float: right;
 }
 
 .info_chat {
