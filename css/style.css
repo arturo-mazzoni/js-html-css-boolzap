@@ -18,6 +18,10 @@ body {
   background-color: gray;
 }
 
+input:focus {
+
+}
+
 /* LEFT */
 
 .container_left {
@@ -48,6 +52,7 @@ body {
 .header_left .icons {
   float: right;
   line-height: 70px;
+  margin-right: 20px;
 }
 
 .header_left .icons i {
@@ -102,9 +107,11 @@ body {
   width: 320px;
   height: 30px;
   margin-top: 10px;
+  padding-left: 10px;
 }
 
 .chats {
+  height: 610px;
   overflow-y: scroll;
 }
 
@@ -147,6 +154,7 @@ body {
 .header_right .icons {
   float: right;
   line-height: 70px;
+  margin-right: 20px;
 }
 
 .header_right .icons i {
@@ -159,6 +167,37 @@ body {
   border: 1px solid black;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.type_msg i {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.type_msg input {
+  height: 50px;
+  width: 650px;
+  margin-top: 10px;
+  padding-left: 10px;
+
+}
+
+.icon_smile {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.icon_mic {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 
