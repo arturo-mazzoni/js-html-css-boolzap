@@ -88,6 +88,7 @@ body {
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
+  border-radius: 3px;
   background-color: white;
   color: lightgrey;
   float: left;
@@ -102,6 +103,11 @@ body {
   height: 30px;
   margin-top: 10px;
   padding-left: 10px;
+  border-radius: 3px;
+}
+
+.search_bar input:focus {
+  outline: 0;
 }
 
 .chats {
@@ -177,7 +183,10 @@ body {
   width: 650px;
   margin-top: 10px;
   padding-left: 10px;
+}
 
+.type_msg input:focus {
+  outline: 0;
 }
 
 .icon_smile {
