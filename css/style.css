@@ -15,11 +15,6 @@ body {
   width: 1200px;
   height: 600px;
   margin: 30px auto;
-  background-color: gray;
-}
-
-input:focus {
-
 }
 
 /* LEFT */
@@ -28,13 +23,13 @@ input:focus {
   height: 100%;
   width: 400px;
   float: left;
-  background-color: lightgrey;
 }
 
 .header_left {
   width: 100%;
   height: 70px;
-  border: 1px solid black;
+  border-right: 1px solid #ababab;
+  background-color: #e8e8e8;
 }
 
 .info_utente {
@@ -53,6 +48,7 @@ input:focus {
   float: right;
   line-height: 70px;
   margin-right: 20px;
+  color: #ababab;
 }
 
 .header_left .icons i {
@@ -62,8 +58,7 @@ input:focus {
 .info_chat {
   width: 100%;
   height: 70px;
-  background-color: rgb(56, 160, 255);
-  border: 1px solid black;
+  background-color: rgb(129, 210, 255);
 }
 
 .info_chat i {
@@ -83,7 +78,7 @@ input:focus {
 .search_chat {
   width: 100%;
   height: 50px;
-  border: 1px solid black;
+  background-color: #e8e8e8;
 }
 
 .search_icon {
@@ -94,7 +89,6 @@ input:focus {
   margin-top: 10px;
   margin-left: 10px;
   background-color: white;
-  border: 1px solid gray;
   color: lightgrey;
   float: left;
 }
@@ -111,14 +105,15 @@ input:focus {
 }
 
 .chats {
-  height: 610px;
+  height: 410px;
   overflow-y: scroll;
 }
 
 .chat {
   width: 100%;
   height: 60px;
-  border: 1px solid black;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
   position: relative;
 }
 
@@ -141,20 +136,21 @@ input:focus {
   height: 100%;
   width: 800px;
   float: left;
-  background-color: grey;
+  background-image: url("../img/mine.jpg");
   position: relative;
 }
 
 .header_right {
   width: 100%;
   height: 70px;
-  border: 1px solid black;
+  background-color: #e8e8e8;
 }
 
 .header_right .icons {
   float: right;
   line-height: 70px;
   margin-right: 20px;
+  color: #ababab;
 }
 
 .header_right .icons i {
@@ -164,7 +160,7 @@ input:focus {
 .type_msg {
   width: 100%;
   height: 70px;
-  border: 1px solid black;
+  background-color: #ece7e1;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -190,6 +186,7 @@ input:focus {
   margin-top: 10px;
   margin-left: 10px;
   text-align: center;
+  color: #838383;
 }
 
 .icon_mic {
@@ -198,6 +195,7 @@ input:focus {
   margin-top: 10px;
   margin-right: 10px;
   text-align: center;
+  color: #838383;
 }
 
 
