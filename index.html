@@ -7,12 +7,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
 
-  <div class="container">
+  <div id="app" class="container">
 
     <div class="container_left">
       <div class="header_left">
@@ -47,7 +48,10 @@
       </div>
 
       <div class="chats">
-        <div class="chat">
+        <ul>
+          <li class="chat" v-for="(item,index) in chats">{{name}}</li>
+        </ul>
+        <!-- <div class="chat">
           <img src="img/avatar_2.jpg" alt="">
           <span>Michele</span>
         </div>
@@ -86,7 +90,7 @@
         <div class="chat">
           <img src="img/avatar_6.jpg" alt="">
           <span>Luisa</span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -104,6 +108,18 @@
         </div>
       </div>
 
+      <div class="messages">
+
+        <div class="message recived">
+          <span>Ciao come va?</span>
+        </div>
+
+        <div class="message sent">
+          <span>Tutto bene, grazie.</span>
+        </div>
+
+      </div>
+
       <div class="type_msg">
         <div class="icon_smile">
           <i class="far fa-smile"></i>
@@ -117,6 +133,6 @@
     </div>
 
   </div>
-
+  <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
