@@ -49,7 +49,10 @@
 
       <div class="chats">
         <ul>
-          <li class="chat" v-for="item in chats">{{item.avatar + item.name}}</li>
+          <li class="chat" v-for="item in chats">
+            <img :src="item.avatar" alt="avatar">
+            <span>{{item.name}}</span>
+          </li>
         </ul>
         <!-- <div class="chat">
           <img src="img/avatar_2.jpg" alt="">
@@ -97,9 +100,9 @@
     <div class="container_right">
 
       <div class="header_right">
-        <div class="info_utente">
-            <img src="img/avatar_1.jpg" alt="avatar">
-            <span>Michele</span>
+        <div class="info_utente" v-for="item in chats">
+            <img :src="item.avatar[0]" alt="avatar">
+            <span>{{item.name}}</span>
         </div>
         <div class="icons">
           <i class="fas fa-search"></i>

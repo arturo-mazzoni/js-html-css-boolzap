@@ -13,6 +13,7 @@ body {
 
 .container {
   width: 1200px;
+  min-width: 950;
   height: 600px;
   margin: 30px auto;
 }
@@ -174,6 +175,7 @@ body {
   border-radius: 10px;
   max-width: 400px;
   min-width: 150px;
+  word-break: break-word;
 }
 
 .recived {
