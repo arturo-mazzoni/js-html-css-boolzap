@@ -100,8 +100,8 @@
     <div class="container_right">
 
       <div class="header_right">
-        <div class="info_utente" v-for="item in chats">
-            <img :src="item.avatar[0]" alt="avatar">
+        <div class="info_utente" v-for="item in chats" v-if="item.visible==true">
+            <img :src="item.avatar" alt="avatar">
             <span>{{item.name}}</span>
         </div>
         <div class="icons">

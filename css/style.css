@@ -107,8 +107,8 @@ body {
   border-radius: 3px;
 }
 
-.search_bar input:focus {
-  outline: 0;
+.search_bar input {
+  outline: none;
 }
 
 .chats {
