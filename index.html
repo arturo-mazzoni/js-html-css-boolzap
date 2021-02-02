@@ -49,7 +49,7 @@
 
       <div class="chats">
         <ul>
-          <li class="chat" v-for="(item,index) in chats">{{name}}</li>
+          <li class="chat" v-for="item in chats">{{item.avatar + item.name}}</li>
         </ul>
         <!-- <div class="chat">
           <img src="img/avatar_2.jpg" alt="">

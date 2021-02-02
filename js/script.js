@@ -4,7 +4,7 @@ var app = new Vue ({
     chats: [
       {
         name: 'Michele',
-        avatar: 'avatar_1.jpg',
+        avatar: '../img/avatar_1.jpg',
         visible: true,
         messages: [
           {
@@ -88,6 +88,6 @@ var app = new Vue ({
     ],
   },
   methods: {
-    
+
   },
 });
