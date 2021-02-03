@@ -1,6 +1,7 @@
 var app = new Vue ({
   el: "#app",
   data: {
+    counter: 0,
     chats: [
       {
         name: 'Michele',
@@ -88,6 +89,8 @@ var app = new Vue ({
     ],
   },
   methods: {
-
-  },
+    clickChat(i){
+      this.counter = i;
+    }
+  }
 });

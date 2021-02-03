@@ -50,7 +50,7 @@
 
       <div class="chats">
         <ul>
-          <li class="chat" v-for="item in chats">
+          <li class="chat" v-for="(item, index) in chats" v-for="(item, index) in chats[counter].messages" @click="clickChat(index)">
             <img :src="item.avatar" alt="avatar">
             <span>{{item.name}}</span>
           </li>
@@ -73,18 +73,12 @@
         </div>
       </div>
 
-      <div class="messages" v-for="item in messages">
+      <div class="messages">
 
-        <div class="message recived">
+        <div class="message" v-for="(item, index) in chats[counter].messages" :class="item.status">
           <span>{{item.text}}</span>
           <br>
-          <span class="data">10/01/2020 15:03:03</span>
-        </div>
-
-        <div class="message sent">
-          <span>Tutto bene, grazie.</span>
-          <br>
-          <span class="data">10/01/2020 15:03:03</span>
+          <span class="data">{{item.date}}</span>
         </div>
 
       </div>
