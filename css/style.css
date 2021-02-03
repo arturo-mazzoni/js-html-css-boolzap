@@ -166,7 +166,8 @@ body {
 }
 
 .messages {
-  max-height: 660px;
+  height: calc(600px - 70px - 70px);
+  overflow-y: scroll;
 }
 
 .message {
@@ -176,6 +177,7 @@ body {
   max-width: 400px;
   min-width: 150px;
   word-break: break-word;
+  position: relative;
 }
 
 .recived {
@@ -188,6 +190,14 @@ body {
   background-color: #d5f9ba;
   float: right;
   clear: both;
+}
+
+.data {
+  color: lightgrey;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 
 .type_msg {

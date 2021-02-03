@@ -16,6 +16,7 @@
   <div id="app" class="container">
 
     <div class="container_left">
+
       <div class="header_left">
         <div class="info_utente">
           <img src="img/avatar_1.jpg" alt="avatar">
@@ -54,47 +55,8 @@
             <span>{{item.name}}</span>
           </li>
         </ul>
-        <!-- <div class="chat">
-          <img src="img/avatar_2.jpg" alt="">
-          <span>Michele</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_3.jpg" alt="">
-          <span>Fabio</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_4.jpg" alt="">
-          <span>Samuele</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div>
-        <div class="chat">
-          <img src="img/avatar_6.jpg" alt="">
-          <span>Luisa</span>
-        </div> -->
       </div>
+
     </div>
 
     <div class="container_right">
@@ -111,14 +73,18 @@
         </div>
       </div>
 
-      <div class="messages">
+      <div class="messages" v-for="item in messages">
 
         <div class="message recived">
-          <span>Ciao come va?</span>
+          <span>{{item.text}}</span>
+          <br>
+          <span class="data">10/01/2020 15:03:03</span>
         </div>
 
         <div class="message sent">
           <span>Tutto bene, grazie.</span>
+          <br>
+          <span class="data">10/01/2020 15:03:03</span>
         </div>
 
       </div>
