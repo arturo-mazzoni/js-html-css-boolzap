@@ -6,7 +6,7 @@ var app = new Vue ({
       {
         name: 'Michele',
         avatar: 'img/avatar_1.jpg',
-        visible: true,
+        visible: false,
         messages: [
           {
             date: '10/01/2020 15:30:55',
@@ -83,10 +83,10 @@ var app = new Vue ({
             date: '10/01/2020 15:50:00',
             text: 'Si, ma preferirei andare al cinema',
             status: 'received'
-          },
-        ],
-      },
-    ],
+          }
+        ]
+      }
+    ]
   },
   methods: {
     clickChat(i){
