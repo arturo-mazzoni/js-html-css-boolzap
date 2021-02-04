@@ -115,9 +115,11 @@ var app = new Vue ({
     },
     chatSearch(){
       this.chats.forEach((element) => {
-        if (!element.name.includes(this.ricerca)){
+        if (!element.name.toLowerCase().includes(this.ricerca.toLowerCase())){
           element.visible = false;
-        };
+        } else {
+          element.visible = true;
+        }
       });
     }
   }
