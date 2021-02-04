@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
@@ -63,8 +64,10 @@
 
       <div class="header_right">
         <div class="info_utente">
-            <img :src="chats[counter].avatar" alt="avatar">
-            <span>{{chats[counter].name}}</span>
+          <img :src="chats[counter].avatar" alt="avatar">
+          <span>{{chats[counter].name}}</span>
+          <br>
+          <span class="ultimo_accesso">Ultimo accesso alle </span>
         </div>
         <div class="icons">
           <i class="fas fa-search"></i>
@@ -87,7 +90,7 @@
         <div class="icon_smile">
           <i class="far fa-smile"></i>
         </div>
-        <input type="text" placeholder="Scrivi messaggio">
+        <input type="text" placeholder="Scrivi messaggio" v-model="newMessage" @keyup.enter="sendMessage">
         <div class="icon_mic">
           <i class="fas fa-microphone"></i>
         </div>

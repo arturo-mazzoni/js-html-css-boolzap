@@ -2,6 +2,7 @@ var app = new Vue ({
   el: "#app",
   data: {
     counter: 0,
+    newMessage: "",
     chats: [
       {
         name: 'Michele',
@@ -91,6 +92,23 @@ var app = new Vue ({
   methods: {
     clickChat(i){
       this.counter = i;
+    },
+    sendMessage(){
+      let nuovomsg = {
+        date: "moment().format('MMMM Do YYYY, h:mm:ss a')",
+        text: this.newMessage,
+        status: "sent"
+      };
+      this.chats[this.counter].messages.push(nuovomsg);
+      this.newMessage = "";
+      let nuovoRecived = {
+        date: "",
+        text: "ok",
+        status: "received"
+      };
+      // setInterval(function(){
+      //   this.chats[this.counter].messages.push(nuovoRecived);
+      // }, 1000)
     }
   }
 });
