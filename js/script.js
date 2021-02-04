@@ -95,7 +95,7 @@ var app = new Vue ({
     },
     sendMessage(){
       let nuovomsg = {
-        date: "moment().format('MMMM Do YYYY, h:mm:ss a')",
+        date: "",
         text: this.newMessage,
         status: "sent"
       };
@@ -106,9 +106,9 @@ var app = new Vue ({
         text: "ok",
         status: "received"
       };
-      // setInterval(function(){
-      //   this.chats[this.counter].messages.push(nuovoRecived);
-      // }, 1000)
+      setInterval(function(){
+        this.chats[this.counter].messages.push(nuovoRecived);
+      }, 1000)
     }
   }
 });
