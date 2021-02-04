@@ -45,13 +45,13 @@
           <i class="fas fa-search"></i>
         </div>
         <div class="search_bar">
-          <input type="text" placeholder="Cerca o inizia una nuova chat">
+          <input type="text" v-model="ricerca" @keyup="chatSearch" placeholder="Cerca o inizia una nuova chat">
         </div>
       </div>
 
       <div class="chats">
         <ul>
-          <li class="chat" v-for="(item, index) in chats" v-for="(item, index) in chats[counter].messages" @click="clickChat(index)">
+          <li class="chat" v-if="item.visible" v-for="(item, index) in chats" @click="clickChat(index)">
             <img :src="item.avatar" alt="avatar">
             <span>{{item.name}}</span>
           </li>
