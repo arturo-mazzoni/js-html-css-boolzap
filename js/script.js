@@ -96,7 +96,7 @@ var app = new Vue ({
     },
     sendMessage(){
       let nuovomsg = {
-        date: "",
+        date: moment().format("DD MM YYYY  h:mm:ss"),
         text: this.newMessage,
         status: "sent"
       };
@@ -107,7 +107,7 @@ var app = new Vue ({
     },
     autoResponse(){
       let nuovoRecived = {
-        date: "",
+        date: moment().format("DD MM YYYY  h:mm:ss"),
         text: "ok",
         status: "received"
       };
